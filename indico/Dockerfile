@@ -27,7 +27,7 @@ RUN ${INDICO_VIRTUALENV}/indico setup create_logging_config /opt/indico/etc
 COPY indico.conf /opt/indico/etc/indico.conf
 RUN ln -s /opt/indico/etc/indico.conf /etc/indico.conf
 
-EXPOSE 59999
+EXPOSE 8080 59999
 
 COPY uwsgi.ini /etc/uwsgi.ini
 
